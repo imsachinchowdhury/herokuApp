@@ -6,7 +6,7 @@ const  path = require('path');
 
 // if you host this website then you have to write port variable(enviroment variable)
 // const port = process.env.PORT || 300;
-const port = 300;
+const port = process.env.PORT || 3000;
 
 const staticPath = path.join(__dirname,'../public');
 const templatePath = path.join(__dirname,'../template/views');
