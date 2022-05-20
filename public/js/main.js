@@ -66,7 +66,7 @@ const getInfo =(event)=>{
         
     }else{
         try{
-            const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=03db699376207b0cdd07408c970bc476`;
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=03db699376207b0cdd07408c970bc476`;
             getTemparature(url).then(data=>{
                 console.log(data);
                 arr = [data];
